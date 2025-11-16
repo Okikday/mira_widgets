@@ -1,3 +1,7 @@
+## 0.0.5
+
+* Added Documentations
+
 ## 0.0.4
 
 * **Padding shortcuts** - `.p8`, `.p16`, `.p24` and more. Plus `.allPadding()`, `.symmetricPadding()`, `.horizontalPadding()`, `.verticalPadding()`

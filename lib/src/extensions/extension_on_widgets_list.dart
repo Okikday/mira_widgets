@@ -6,6 +6,7 @@ extension ExtensionOnWidgetsList on List<Widget> {
   // ROW
   // ============================================================================
 
+  /// Wraps the widget list with [Row].
   Row row({
     Key? key,
     MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start,
@@ -25,20 +26,29 @@ extension ExtensionOnWidgetsList on List<Widget> {
     children: this,
   );
 
+  /// Wraps the widget list with [Row].
   Row get inRow => row();
-  Row get rowSpaceBetween =>
-      row(mainAxisAlignment: MainAxisAlignment.spaceBetween);
-  Row get rowSpaceAround =>
-      row(mainAxisAlignment: MainAxisAlignment.spaceAround);
-  Row get rowSpaceEvenly =>
-      row(mainAxisAlignment: MainAxisAlignment.spaceEvenly);
+
+  /// Wraps the widget list with [Row] with spaceBetween alignment.
+  Row get rowSpaceBetween => row(mainAxisAlignment: MainAxisAlignment.spaceBetween);
+
+  /// Wraps the widget list with [Row] with spaceAround alignment.
+  Row get rowSpaceAround => row(mainAxisAlignment: MainAxisAlignment.spaceAround);
+
+  /// Wraps the widget list with [Row] with spaceEvenly alignment.
+  Row get rowSpaceEvenly => row(mainAxisAlignment: MainAxisAlignment.spaceEvenly);
+
+  /// Wraps the widget list with [Row] with center alignment.
   Row get rowCenter => row(mainAxisAlignment: MainAxisAlignment.center);
+
+  /// Wraps the widget list with [Row] with end alignment.
   Row get rowEnd => row(mainAxisAlignment: MainAxisAlignment.end);
 
   // ============================================================================
   // COLUMN
   // ============================================================================
 
+  /// Wraps the widget list with [Column].
   Column column({
     Key? key,
     MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start,
@@ -58,21 +68,29 @@ extension ExtensionOnWidgetsList on List<Widget> {
     children: this,
   );
 
+  /// Wraps the widget list with [Column].
   Column get inColumn => column();
-  Column get columnSpaceBetween =>
-      column(mainAxisAlignment: MainAxisAlignment.spaceBetween);
-  Column get columnSpaceAround =>
-      column(mainAxisAlignment: MainAxisAlignment.spaceAround);
-  Column get columnSpaceEvenly =>
-      column(mainAxisAlignment: MainAxisAlignment.spaceEvenly);
-  Column get columnCenter =>
-      column(mainAxisAlignment: MainAxisAlignment.center);
+
+  /// Wraps the widget list with [Column] with spaceBetween alignment.
+  Column get columnSpaceBetween => column(mainAxisAlignment: MainAxisAlignment.spaceBetween);
+
+  /// Wraps the widget list with [Column] with spaceAround alignment.
+  Column get columnSpaceAround => column(mainAxisAlignment: MainAxisAlignment.spaceAround);
+
+  /// Wraps the widget list with [Column] with spaceEvenly alignment.
+  Column get columnSpaceEvenly => column(mainAxisAlignment: MainAxisAlignment.spaceEvenly);
+
+  /// Wraps the widget list with [Column] with center alignment.
+  Column get columnCenter => column(mainAxisAlignment: MainAxisAlignment.center);
+
+  /// Wraps the widget list with [Column] with end alignment.
   Column get columnEnd => column(mainAxisAlignment: MainAxisAlignment.end);
 
   // ============================================================================
   // STACK
   // ============================================================================
 
+  /// Wraps the widget list with [Stack].
   Stack stack({
     Key? key,
     AlignmentGeometry alignment = AlignmentDirectional.topStart,
@@ -88,14 +106,20 @@ extension ExtensionOnWidgetsList on List<Widget> {
     children: this,
   );
 
+  /// Wraps the widget list with [Stack].
   Stack get inStack => stack();
+
+  /// Wraps the widget list with [Stack] with center alignment.
   Stack get stackCenter => stack(alignment: Alignment.center);
+
+  /// Wraps the widget list with [Stack] with expand fit.
   Stack get stackExpanded => stack(fit: StackFit.expand);
 
   // ============================================================================
   // WRAP
   // ============================================================================
 
+  /// Wraps the widget list with [Wrap].
   Wrap wrap({
     Key? key,
     Axis direction = Axis.horizontal,
@@ -121,12 +145,14 @@ extension ExtensionOnWidgetsList on List<Widget> {
     children: this,
   );
 
+  /// Wraps the widget list with [Wrap].
   Wrap get inWrap => wrap();
 
   // ============================================================================
   // FLEX
   // ============================================================================
 
+  /// Wraps the widget list with [Flex].
   Flex flex(
     Axis direction, {
     Key? key,
@@ -150,12 +176,14 @@ extension ExtensionOnWidgetsList on List<Widget> {
     children: this,
   );
 
+  /// Wraps the widget list with horizontal [Flex].
   Flex get inFlex => flex(Axis.horizontal);
 
   // ============================================================================
   // LISTVIEW
   // ============================================================================
 
+  /// Wraps the widget list with [ListView].
   ListView listView({
     Key? key,
     Axis scrollDirection = Axis.vertical,
@@ -171,8 +199,7 @@ extension ExtensionOnWidgetsList on List<Widget> {
     double? cacheExtent,
     int? semanticChildCount,
     DragStartBehavior dragStartBehavior = DragStartBehavior.start,
-    ScrollViewKeyboardDismissBehavior keyboardDismissBehavior =
-        ScrollViewKeyboardDismissBehavior.manual,
+    ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual,
     String? restorationId,
     Clip clipBehavior = Clip.hardEdge,
   }) => ListView(
@@ -196,12 +223,14 @@ extension ExtensionOnWidgetsList on List<Widget> {
     children: this,
   );
 
+  /// Wraps the widget list with [ListView].
   ListView get inListView => listView();
 
   // ============================================================================
   // INDEXED STACK
   // ============================================================================
 
+  /// Wraps the widget list with [IndexedStack] showing the widget at the specified index.
   IndexedStack indexedStack(
     int index, {
     Key? key,
@@ -221,6 +250,7 @@ extension ExtensionOnWidgetsList on List<Widget> {
   // PAGE VIEW
   // ============================================================================
 
+  /// Wraps the widget list with [PageView].
   PageView pageView({
     Key? key,
     Axis scrollDirection = Axis.horizontal,
@@ -252,5 +282,6 @@ extension ExtensionOnWidgetsList on List<Widget> {
     children: this,
   );
 
+  /// Wraps the widget list with [PageView].
   PageView get inPageView => pageView();
 }

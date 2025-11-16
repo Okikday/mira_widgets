@@ -1,6 +1,6 @@
 # Mira Widgets
 
-**Quickstart** • **Documentation** (coming soon) • **Pub.dev**
+**Quickstart** • **Documentation** • **Pub.dev**
 
 Stop nesting. Start chaining.
 
@@ -17,7 +17,7 @@ Stop nesting. Start chaining.
 Add to your `pubspec.yaml`:
 ```yaml
 dependencies:
-  mira_widgets: ^0.0.4
+  mira_widgets: ^0.0.5
 ```
 
 Import it:
