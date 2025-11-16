@@ -26,9 +26,12 @@ extension ExtensionOnWidgetsList on List<Widget> {
   );
 
   Row get inRow => row();
-  Row get rowSpaceBetween => row(mainAxisAlignment: MainAxisAlignment.spaceBetween);
-  Row get rowSpaceAround => row(mainAxisAlignment: MainAxisAlignment.spaceAround);
-  Row get rowSpaceEvenly => row(mainAxisAlignment: MainAxisAlignment.spaceEvenly);
+  Row get rowSpaceBetween =>
+      row(mainAxisAlignment: MainAxisAlignment.spaceBetween);
+  Row get rowSpaceAround =>
+      row(mainAxisAlignment: MainAxisAlignment.spaceAround);
+  Row get rowSpaceEvenly =>
+      row(mainAxisAlignment: MainAxisAlignment.spaceEvenly);
   Row get rowCenter => row(mainAxisAlignment: MainAxisAlignment.center);
   Row get rowEnd => row(mainAxisAlignment: MainAxisAlignment.end);
 
@@ -56,10 +59,14 @@ extension ExtensionOnWidgetsList on List<Widget> {
   );
 
   Column get inColumn => column();
-  Column get columnSpaceBetween => column(mainAxisAlignment: MainAxisAlignment.spaceBetween);
-  Column get columnSpaceAround => column(mainAxisAlignment: MainAxisAlignment.spaceAround);
-  Column get columnSpaceEvenly => column(mainAxisAlignment: MainAxisAlignment.spaceEvenly);
-  Column get columnCenter => column(mainAxisAlignment: MainAxisAlignment.center);
+  Column get columnSpaceBetween =>
+      column(mainAxisAlignment: MainAxisAlignment.spaceBetween);
+  Column get columnSpaceAround =>
+      column(mainAxisAlignment: MainAxisAlignment.spaceAround);
+  Column get columnSpaceEvenly =>
+      column(mainAxisAlignment: MainAxisAlignment.spaceEvenly);
+  Column get columnCenter =>
+      column(mainAxisAlignment: MainAxisAlignment.center);
   Column get columnEnd => column(mainAxisAlignment: MainAxisAlignment.end);
 
   // ============================================================================
@@ -164,7 +171,8 @@ extension ExtensionOnWidgetsList on List<Widget> {
     double? cacheExtent,
     int? semanticChildCount,
     DragStartBehavior dragStartBehavior = DragStartBehavior.start,
-    ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual,
+    ScrollViewKeyboardDismissBehavior keyboardDismissBehavior =
+        ScrollViewKeyboardDismissBehavior.manual,
     String? restorationId,
     Clip clipBehavior = Clip.hardEdge,
   }) => ListView(
