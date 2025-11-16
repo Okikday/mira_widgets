@@ -1,3 +1,11 @@
+## 0.0.4
+
+* **Padding shortcuts** - `.p8`, `.p16`, `.p24` and more. Plus `.allPadding()`, `.symmetricPadding()`, `.horizontalPadding()`, `.verticalPadding()`
+* **Clipping shortcuts** - `.rounded()`, `.roundedOnly()`, `.circular` for easy border radius
+* **Decoration shortcuts** - `.border()`, `.borderRadius()`, `.shadow()` without creating BoxDecoration objects
+* **Sizing helpers** - `.gap()`, `.vGap()`, `.hGap()` for spacing in flex layouts
+* **More convenient getters** - `.circular`, `.inSafeArea`, `.inFlexible`, `.inFittedBox`, `.rectClipped`
+
 ## 0.0.3
 
 * Added comprehensive widget extensions covering layout, sizing, decoration, clipping, visual effects, interactions, scrolling, visibility, animations, and theming
